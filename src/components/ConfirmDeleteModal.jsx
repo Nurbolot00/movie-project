@@ -7,7 +7,7 @@ const ConfirmDeleteModal = ({onClose,onConfirm}) => {
         
         <Modal onClose={onClose}>
             <p>Are you sure you wanna delete this item?</p>
-            <Button color='red' onClick={onConfirm}>No</Button>
+            <Button color='red' onClick={onClose}>No</Button>
             <Button color='#00329e' onClick={onConfirm}>Yes</Button>
         </Modal>
     );

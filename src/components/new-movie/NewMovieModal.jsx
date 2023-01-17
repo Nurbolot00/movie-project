@@ -1,5 +1,5 @@
 import React from "react";
-import { Modal } from "../Modal";
+import { Backdrop, Modal } from "../Modal";
 import Button from "../UI/button/Button";
 import { useRef } from "react";
 import FormInput from "../UI/form-input/FormInput";
@@ -27,7 +27,9 @@ const NewMovieModal = (props) => {
   };
 
   return (
-    <Modal>
+    <>
+       <Modal>
+        <Backdrop/>
       <form action="">
         <FormInput
           id="title"
@@ -60,6 +62,7 @@ const NewMovieModal = (props) => {
         </Button>
       </form>
     </Modal>
+    </>
   );
 };
 
